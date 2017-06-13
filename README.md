@@ -21,7 +21,7 @@ Post your files to `https://speedyjs-saas.herokuapp.com/compile`
 
 ```
 
-The output differs depending on the specified tsconfig and speedy.js options.
+The output differs depending on the specified tsconfig and [speedy.js options](https://github.com/MichaReiser/speedy.js/blob/master/packages/compiler/src/speedyjs-compiler-options.ts#L10).
 
 ```json
 [
