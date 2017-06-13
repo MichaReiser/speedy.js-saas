@@ -1,0 +1,11 @@
+{
+  "files": [
+    {
+      "fileName": "fib.ts",
+      "source": "async function test(value: int) { \"use speedyjs\";\n return value; }"
+    }
+  ],
+  "tsconfig": {
+    "saveWast": true
+  }
+}
