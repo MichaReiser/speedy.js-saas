@@ -36,7 +36,11 @@ app.post("/compile", validate({ body: require("./schemas/compile-schema.json") }
 });
 
 app.get("/version", function (req, res) {
-    res.json(require("./package.json").version);
+    res.json({
+        "speedyjs-compiler": require("speedyjs-compiler/package.json").version,
+        "typescript": require("typescript/package.json").version,
+        "speedyjs-saas": require("./package.json").version
+    });
 });
 
 

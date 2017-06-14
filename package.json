@@ -1,9 +1,9 @@
 {
     "name": "speedyjs-server",
-    "version": "1.0.0",
+    "version": "0.0.15",
     "description": "SaaS server endpoint for the Speedy.js Compiler",
     "main": "index.js",
-    "repository": "https://github.com/MichaReiser/speedy.js.git",
+    "repository": "https://github.com/MichaReiser/speedy.js-saas.git",
     "private": true,
     "engines": {
         "node": "7.x.x"
