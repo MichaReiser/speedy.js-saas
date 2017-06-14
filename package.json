@@ -1,6 +1,6 @@
 {
     "name": "speedyjs-server",
-    "version": "0.0.16",
+    "version": "0.0.17",
     "description": "SaaS server endpoint for the Speedy.js Compiler",
     "main": "index.js",
     "repository": "https://github.com/MichaReiser/speedy.js-saas.git",
@@ -17,6 +17,6 @@
         "body-parser": "^1.17.2",
         "express": "^4.15.3",
         "express-jsonschema": "^1.1.6",
-        "speedyjs-compiler": "0.0.15"
+        "speedyjs-compiler": "0.0.16"
     }
 }
