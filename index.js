@@ -1,5 +1,6 @@
 const bodyParser = require('body-parser');
 const express = require("express");
+const compression = require('compression')
 const validate = require('express-jsonschema').validate;
 const speedyjs = require("speedyjs-compiler");
 
@@ -7,6 +8,8 @@ const PORT = process.env.PORT || 3000;
 
 const app = express();
 app.use(bodyParser.json());
+app.use(compression());
+
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods", "GET, POST");
