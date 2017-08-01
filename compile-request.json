@@ -2,10 +2,11 @@
   "files": [
     {
       "fileName": "fib.ts",
-      "source": "async function test(value: int) { \"use speedyjs\";\n return value; }"
+      "source": "async function arrayReverse(array: number[]) {\n\"use speedyjs\";\n\nfor (let i = 0; i < array.length / 2; ++i) {\nswap(array, i, array.length - i - 1);\n}\n\nreturn array;\n}\n\nfunction swap(array: number[], i: int, j: int) {\n\"use speedyjs\";\n\nconst tmp = array[i];\narray[i] = array[j];\narray[j] = tmp;\n}\n\narrayReverse([1, 2, 3, 4, 5]).then(result => console.log(result));"
     }
   ],
   "tsconfig": {
-    "saveWast": true
+    "saveWast": true,
+    "optimizationLevel": 0
   }
 }
